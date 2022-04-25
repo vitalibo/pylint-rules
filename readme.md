@@ -14,8 +14,8 @@ or use directly from url
 
 ```makefile
 codestyle:
-	@RCFILE_DIR=$(shell mktemp -d) && \
-	  wget -q 'https://raw.githubusercontent.com/vitalibo/pylint-rules/master/.pylintrc' -P $$RCFILE_DIR && \
-	  pylint src/ tests/ --rcfile "$$RCFILE_DIR/.pylintrc" && \
-	  rm -rf $$RCFILE_DIR
+	@RCFILE=$(shell mktemp) && \
+	wget -q 'https://raw.githubusercontent.com/vitalibo/pylint-rules/master/.pylintrc' -O $$RCFILE && \
+	pylint src/ tests/ --rcfile $$RCFILE && \
+	rm -rf $$RCFILE
 ```
