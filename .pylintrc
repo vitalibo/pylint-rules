@@ -103,14 +103,10 @@ good-names =
     j,
     k,
     f,
-    x,
-    y,
-    z,
     e,
     ex,
     df,
     sc,
-    Run,
     _
 include-naming-hint = no
 inlinevar-naming-style = snake_case
