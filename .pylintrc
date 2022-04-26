@@ -19,6 +19,8 @@ disable =
     missing-function-docstring,
     wrong-spelling-in-comment,
     wrong-spelling-in-docstring,
+    locally-disabled,
+    suppressed-message,
 
 [REFACTORING]
 max-nested-blocks = 3
